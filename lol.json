@@ -1,8 +1,8 @@
 {
   "id": "jkanime-net",
   "name": "Jkanime",
-  "version": "2.0.0",
-  "description": "Anime subtítulos desde jkanime.net — Novedades, Home, Descubrir, Buscar, ficha completa y servidores.",
+  "version": "2.1.0",
+  "description": "Anime subtítulos desde jkanime.net (fix: cheerio, discover, parsers)",
   "author": "Susejing (adaptado)",
   "repo": "usuario/jkanime-adapted",
   "icon": "icon.png",
@@ -16,10 +16,26 @@
     "surface": "#141A22",
     "highlight": "#00D4FF"
   },
-  "languages": ["Subtitulado"],
-  "capabilities": ["home", "discover", "search", "meta", "streams"],
-  "tabs": ["home", "discover", "search", "library", "settings"],
-  "section": { "label": "Anime" },
+  "languages": [
+    "Subtitulado"
+  ],
+  "capabilities": [
+    "home",
+    "discover",
+    "search",
+    "meta",
+    "streams"
+  ],
+  "tabs": [
+    "home",
+    "discover",
+    "search",
+    "library",
+    "settings"
+  ],
+  "section": {
+    "label": "Anime"
+  },
   "newsImageStyle": "poster",
   "discoverImageStyle": "poster",
   "searchImageStyle": "poster",
@@ -33,7 +49,15 @@
       "key": "preferred_server",
       "label": "Servidor preferido",
       "type": "select",
-      "options": ["Cualquiera", "Nozomi", "Desu", "Okru", "Fembed", "Streamtape", "Mega"],
+      "options": [
+        "Cualquiera",
+        "Nozomi",
+        "Desu",
+        "Okru",
+        "Fembed",
+        "Streamtape",
+        "Mega"
+      ],
       "default": "Cualquiera",
       "description": "Prioriza este servidor en la lista de reproducción"
     },
@@ -41,7 +65,12 @@
       "key": "max_episodes_home",
       "label": "Máx. episodios recientes en Home",
       "type": "select",
-      "options": ["12", "18", "24", "36"],
+      "options": [
+        "12",
+        "18",
+        "24",
+        "36"
+      ],
       "default": "18"
     }
   ]
