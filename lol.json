@@ -1,0 +1,48 @@
+{
+  "id": "jkanime-net",
+  "name": "Jkanime",
+  "version": "2.0.0",
+  "description": "Anime subtítulos desde jkanime.net — Novedades, Home, Descubrir, Buscar, ficha completa y servidores.",
+  "author": "Susejing (adaptado)",
+  "repo": "usuario/jkanime-adapted",
+  "icon": "icon.png",
+  "entry": "plugin.js",
+  "apiVersion": 6,
+  "color": "#00A8E8",
+  "theme": {
+    "accent": "#00A8E8",
+    "onAccent": "#FFFFFF",
+    "background": "#0B0E14",
+    "surface": "#141A22",
+    "highlight": "#00D4FF"
+  },
+  "languages": ["Subtitulado"],
+  "capabilities": ["home", "discover", "search", "meta", "streams"],
+  "tabs": ["home", "discover", "search", "library", "settings"],
+  "section": { "label": "Anime" },
+  "newsImageStyle": "poster",
+  "discoverImageStyle": "poster",
+  "searchImageStyle": "poster",
+  "discoverShowTitle": true,
+  "searchShowTitle": true,
+  "episodesPagination": true,
+  "episodesPerPage": 24,
+  "browser": false,
+  "config": [
+    {
+      "key": "preferred_server",
+      "label": "Servidor preferido",
+      "type": "select",
+      "options": ["Cualquiera", "Nozomi", "Desu", "Okru", "Fembed", "Streamtape", "Mega"],
+      "default": "Cualquiera",
+      "description": "Prioriza este servidor en la lista de reproducción"
+    },
+    {
+      "key": "max_episodes_home",
+      "label": "Máx. episodios recientes en Home",
+      "type": "select",
+      "options": ["12", "18", "24", "36"],
+      "default": "18"
+    }
+  ]
+}
